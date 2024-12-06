@@ -1,0 +1,39 @@
+proxies:
+  - name: sgtrojan
+    server: 104.26.7.171
+    port: 443
+    type: trojan
+    password: a7131ee1-e226-48e0-9abd-fc53c1200880
+    skip-cert-verify: true
+    sni: trojan-sg01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+    udp: true
+  - name: ustrojan
+    server: 104.26.7.171
+    port: 443
+    type: trojan
+    password: 7f66933e-fda1-40c9-b504-a037f63aa567
+    skip-cert-verify: true
+    sni: trojan-ovh-us02.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+    udp: true
+  - name: usvmess
+    server: 104.26.7.171
+    port: 443
+    type: vmess
+    uuid: 1f3930f0-c12d-4b72-a5dd-de09dc08fab5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-ovh-us02.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: vmess-ovh-us02.globalssh.xyz
+    udp: true
