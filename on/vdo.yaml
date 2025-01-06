@@ -179,7 +179,7 @@ proxy-groups:
       - id 6
       - id 7
 rules:
-  - MATCH,ilped
+  - MATCH,vidio
 
 default:
 akun id1: &id1
