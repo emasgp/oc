@@ -1,1 +1,3 @@
 vless://a8126b2e-51ff-4436-86ed-97d12e19af54@vless-sg01.gproxy.gratis:443?security=tls&encryption=none&host=vless-sg01.gproxy.gratis&type=ws&path=/vless-ws&sni=vless-sg01.gproxy.gratis#sgvless_ws_tls
+trojan-go://eefe684f-65b9-4e36-b0d3-6aff821261aa@tro-jp01.gproxy.gratis:443?sni=tro-jp01.gproxy.gratis&type=ws&host=tro-jp01.gproxy.gratis&path=/trojan-ws#jptrojan_ws
+vless://53cc886d-4b59-4a2e-ab3a-022caba86924@vless-jp01.gproxy.gratis:443?security=tls&encryption=none&host=vless-jp01.gproxy.gratis&type=ws&path=/vless-ws&sni=vless-jp01.gproxy.gratis#jpvless_ws_tls
