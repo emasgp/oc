@@ -138,7 +138,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing
     url: http://hi.bonds.id/ping
-    interval: 4
+    interval: 30
     proxies:
       - id 1
       - id 2
@@ -154,6 +154,7 @@ proxy-groups:
       - id 15
       - id 16
       - id 17
+      - sg 1
   - name: Game
     type: url-test
     url: http://hi.bonds.id/ping
@@ -174,10 +175,11 @@ proxy-groups:
       - id 15
       - id 16
       - id 17
+      - sg 1
   - name: Auto
     type: fallback
     url: http://hi.bonds.id/ping
-    interval: 6
+    interval: 600
     proxies:
       - id 1
       - id 2
@@ -193,12 +195,12 @@ proxy-groups:
       - id 15
       - id 16
       - id 17
+      - sg 1
 rules:
   - MATCH,ilped
 
 default:
 akun id1: &id1
-  #  interface-name: eth1
     server: 104.22.5.240
     port: 443
     type: trojan
@@ -211,7 +213,6 @@ akun id1: &id1
         Host: id1go.ipservers.xyz
     udp: true
 akun id2: &id2
-  #  interface-name: eth1
     server: 104.22.5.240
     port: 443
     type: trojan
@@ -249,25 +250,25 @@ proxies:
     password: jagoanssh-id4trojan
   - name: id 5
     <<: *id1
-    password: jagoanssh-id15trojan 
+    password: jagoanssh-id5trojan 
   - name: id 6
     <<: *id1
-    password: jagoanssh-id16trojan
+    password: jagoanssh-id6trojan
   - name: id 7
     <<: *id1
-    password: jagoanssh-id17trojan
+    password: jagoanssh-id7trojan
   - name: id 11
     <<: *id2
-    password: jagoanssh-id1trojan
+    password: jagoanssh-id11trojan
   - name: id 12
     <<: *id2
-    password: jagoanssh-id2trojan
+    password: jagoanssh-id12trojan
   - name: id 13
     <<: *id2
-    password: jagoanssh-id3trojan
+    password: jagoanssh-id13trojan
   - name: id 14
     <<: *id2
-    password: jagoanssh-id4trojan
+    password: jagoanssh-id14trojan
   - name: id 15
     <<: *id2
     password: jagoanssh-id15trojan 
