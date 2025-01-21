@@ -140,44 +140,58 @@ proxy-groups:
     url: http://hi.bonds.id/ping
     interval: 30
     proxies:
-      - sg 1
-      - sg 2
       - id 1
       - id 2
       - id 3
       - id 4
       - id 5
       - id 6
-      - id 7
+      - id 7  
+      - id 11
+      - id 12
+      - id 13
+      - id 14
+      - id 15
+      - id 16
+      - id 17
   - name: Game
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 5
     tolerance: 50
     proxies:
-      - sg 1
-      - sg 2
       - id 1
       - id 2
       - id 3
       - id 4
       - id 5
       - id 6
-      - id 7
+      - id 7  
+      - id 11
+      - id 12
+      - id 13
+      - id 14
+      - id 15
+      - id 16
+      - id 17
   - name: Auto
     type: fallback
     url: http://hi.bonds.id/ping
     interval: 600
-    proxies:
-      - sg 1
-      - sg 2
       - id 1
       - id 2
       - id 3
       - id 4
       - id 5
       - id 6
-      - id 7
+      - id 7  
+      - id 11
+      - id 12
+      - id 13
+      - id 14
+      - id 15
+      - id 16
+      - id 17
 rules:
   - MATCH,ilped
 
@@ -208,21 +222,6 @@ akun id2: &id2
       headers:
         Host: id2go.ipservers.xyz
     udp: true
-akun sgvm: &sgvmgsh
-    server: 104.26.7.171
-    port: 443
-    type: vmess
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vmess-sg01.gproxy.gratis
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: vmess-sg01.gproxy.gratis
-    udp: true
 akun sgtj: &sgtjgsh
     server: 104.26.7.171
     port: 443
@@ -248,17 +247,35 @@ proxies:
     <<: *id1
     password: jagoanssh-id4trojan
   - name: id 5
-    <<: *id2
+    <<: *id1
     password: jagoanssh-id15trojan 
   - name: id 6
-    <<: *id2
+    <<: *id1
     password: jagoanssh-id16trojan
   - name: id 7
+    <<: *id1
+    password: jagoanssh-id17trojan
+  - name: id 11
+    <<: *id2
+    password: jagoanssh-id1trojan
+  - name: id 12
+    <<: *id2
+    password: jagoanssh-id2trojan
+  - name: id 13
+    <<: *id2
+    password: jagoanssh-id3trojan
+  - name: id 14
+    <<: *id2
+    password: jagoanssh-id4trojan
+  - name: id 15
+    <<: *id2
+    password: jagoanssh-id15trojan 
+  - name: id 16
+    <<: *id2
+    password: jagoanssh-id16trojan
+  - name: id 17
     <<: *id2
     password: jagoanssh-id17trojan
   - name: sg 1
     <<: *sgtjgsh
     password: 95363865-78d9-46f5-a6cb-0035fb74fccb
-  - name: sg 2
-    <<: *sgvmgsh
-    uuid: cb3e3f07-e4cf-48cd-ad55-2dab37754344
