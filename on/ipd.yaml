@@ -138,7 +138,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing
     url: http://hi.bonds.id/ping
-    interval: 30
+    interval: 4
     proxies:
       - id 1
       - id 2
@@ -177,7 +177,7 @@ proxy-groups:
   - name: Auto
     type: fallback
     url: http://hi.bonds.id/ping
-    interval: 600
+    interval: 6
     proxies:
       - id 1
       - id 2
