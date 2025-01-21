@@ -1,2 +1,15 @@
 trojan://jagoanssh-id1trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+1
+trojan://jagoanssh-id2trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+2
+trojan://jagoanssh-id3trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+3
+trojan://jagoanssh-id4trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+4
+trojan://jagoanssh-id5trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+5
+trojan://jagoanssh-id6trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+6
+trojan://jagoanssh-id7trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id1go.ipservers.xyz&type=ws&sni=id1go.ipservers.xyz#id+7
+trojan://jagoanssh-id11trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+11
+trojan://jagoanssh-id12trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+12
+trojan://jagoanssh-id13trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+13
+trojan://jagoanssh-id14trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+14
+trojan://jagoanssh-id15trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+15
+trojan://jagoanssh-id16trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+16
+trojan://jagoanssh-id17trojan@104.26.7.171:443?path=%2Ftrojan&security=tls&host=id2go.ipservers.xyz&type=ws&sni=id2go.ipservers.xyz#id+17
 trojan://744d7a1e-d75a-4e3f-a408-fa59f6eefcba@104.26.7.171:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=tro-sg01.gproxy.gratis#sg+1
