@@ -178,6 +178,7 @@ proxy-groups:
     type: fallback
     url: http://hi.bonds.id/ping
     interval: 600
+    proxies:
       - id 1
       - id 2
       - id 3
@@ -278,4 +279,4 @@ proxies:
     password: jagoanssh-id17trojan
   - name: sg 1
     <<: *sgtjgsh
-    password: 95363865-78d9-46f5-a6cb-0035fb74fccb
+    password: 744d7a1e-d75a-4e3f-a408-fa59f6eefcba
