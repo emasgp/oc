@@ -128,7 +128,7 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxy-groups:
-  - name: ilped
+  - name: vidio
     type: select
     proxies:
       - Auto
@@ -197,7 +197,7 @@ proxy-groups:
       - id 17
       - sg 1
 rules:
-  - MATCH,ilped
+  - MATCH,vidio
 
 default:
 akun id1: &id1
